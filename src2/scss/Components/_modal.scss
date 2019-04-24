@@ -1,0 +1,735 @@
+.iziModal .iziModal-content p{
+  margin-bottom: 10px;
+}
+#modal-welcome, #modal-alert{
+  background: rgba(255,255,255,0.1);
+}
+
+#modal-iframe{
+  border-bottom-color: black !important;
+  background: black;
+}
+
+#modal-custom header{
+  background: #eee;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  width: 100%;
+}
+#modal-custom header a{
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 0;
+  text-align: center;
+  background: #ddd;
+  color: #999;
+  height: 65px;
+  vertical-align: middle;
+  line-height: 65px;
+  font-family: 'Lato', arial;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+#modal-custom header a:not(.active):hover{
+  box-shadow: inset 0 -10px 20px -10px #aaa
+} 
+#modal-custom header a.active{
+  background: #fff;
+  color: #777;
+}
+#modal-custom .sections{
+  overflow: hidden;
+}
+#modal-custom section{
+  padding: 30px;
+}
+#modal-custom section input:not([type="checkbox"]), #modal-custom section button{
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  margin-bottom: 26px;
+  padding: 15px;
+  font-size: 14px;
+}
+#modal-custom section button{
+  height: 46px;
+  padding: 0;
+}
+
+#modal-custom section input:focus{
+  border-color:#28CA97;
+}
+#modal-custom section label[for="check"]{
+  margin-bottom: 26px;
+  font-size: 14px;
+  color: #999;
+  display: block;
+}
+#modal-custom section footer{
+  overflow: hidden;
+}
+#modal-custom section button{
+  background: #28CA97;
+  color: white;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+}
+#modal-custom section button:hover{
+  opacity: 0.8;
+}
+#modal-custom section button:nth-child(1){
+  border-radius: 3px 0 0 3px;
+  background: #aaa;
+}
+#modal-custom section button:nth-child(2){
+  border-radius: 0 3px 3px 0;
+}
+
+#modal-custom .icon-close{
+  background: #FFF;
+  margin-bottom: 10px;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  color: #a9a9a9;
+  cursor: pointer;
+}
+#modal-custom .icon-close:hover, #modal-custom .icon-close:focus{
+  color: black;
+}
+#modal-custom.hasScroll .icon-close{
+  display: none;
+}
+.iziModal .iziModal-header-title{
+  font-family: 'Lato', arial;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+.cd-section{
+  background: #F0F2F1;
+}
+
+
+
+
+/* No Touch devices */
+.cd-nav-trigger {
+  display: none;
+}
+
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+  padding-right: 10px;
+}
+.no-touch #cd-vertical-nav li {
+  text-align: right;
+}
+.no-touch #cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.no-touch #cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+.no-touch #cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.no-touch #cd-vertical-nav a:hover span.cd-dot{
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transform-origin: 50% 50%;
+}
+.no-touch #cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 4px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  transition: transform 0.2s, background-color 0.2s;
+  transform-origin: 50% 50%;
+}
+.no-touch #cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: .1em .5em;
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  font-family: 'Lato';
+  font-weight: 400;
+  color: #555;
+}
+.cd-img-replace{
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.cd-nav-trigger{
+  display: none;
+}
+
+/* Touch devices */
+.touch .cd-nav-trigger {
+  display: block;
+  z-index: 10;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 39px;
+  width: 39px;
+  border-radius: 0.25em;
+  background: rgba(0, 0, 0, 0.4);
+}
+.touch .cd-nav-trigger span {
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: inherit;
+  border-radius: inherit;
+}
+.touch .cd-nav-trigger span::before {
+  top: -9px;
+}
+.touch .cd-nav-trigger span::after {
+  bottom: -9px;
+}
+
+
+
+.touch #cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  right: 10px;
+  bottom: 10px;
+  width: 90%;
+  max-width: 378px;
+  max-height: 90%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  border-radius: 0.25em;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9;
+}
+.touch #cd-vertical-nav a {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #989898;
+}
+.touch #cd-vertical-nav a span:first-child {
+  display: none;
+}
+.touch #cd-vertical-nav a.is-selected span:last-child {
+  color: #fff;
+}
+.touch #cd-vertical-nav.open {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger {
+  background-color: transparent;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span {
+  background-color: rgba(62, 57, 71, 0);
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+  background-color: #555;
+  height: 3px;
+  width: 20px;
+  border-radius: 0;
+  left: -8px;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 1px;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  bottom: 0;
+}
+.touch #cd-vertical-nav li:last-child a {
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .wrap{
+    padding: 0 20px;
+  }
+
+  table td{
+    padding: 10px 20px;
+  }
+
+  .core{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -140px;
+  }
+
+  .core .buttons .lava{
+    display: block;
+  }
+
+  .touch .cd-nav-trigger, .touch #cd-vertical-nav {
+    bottom: 40px;
+  }
+  .no-touch #cd-vertical-nav {
+    right: 40px;
+    padding:0;
+  }
+  .highlight::after, .modal, .buttons .lava{
+    display: block;
+  }
+  .core h1{
+    font-size: 3em;
+  }
+  .core p{
+    padding: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+  .scrollToTop{
+    right: 0;
+    left: auto;
+    bottom: 0;
+    color: #1F919B;
+  }
+  .core .buttons{
+    max-width: none;
+    display: inline-block;
+  }
+  .core .buttons li{
+    display: inline-block;
+    min-width: auto;
+  }
+  .features ul li{
+    display: table-cell;
+    text-align: center;
+    width: 16%;
+  }
+  footer ul li a{
+    padding: 10px;
+  }
+
+}
+
+
+
+.no-touch .first-section #cd-vertical-nav .cd-label{
+  color: #fff;
+}
+
+@-webkit-keyframes wobble {
+  from {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes wobble {
+  from {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.wobble {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .core{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    margin: 0;
+  }
+  .core .examples{
+    width: 125px;
+  }
+  .highlight header{
+    padding: 15px 15px 0 0;
+  }
+  .highlight header a{
+    line-height: 23px;
+  }
+  .highlight header a.github{
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+  }
+  .highlight header a.documentation{
+    padding-right: 15px;
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .tweets .twitter-tweet{
+    float: none;
+    width: 100% !important;
+    padding:0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .core h1{
+    font-size: 2.5em;
+  }
+  .core p{
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (max-height: 530px) {
+  .highlight header{
+    display: none;
+  }
+}
+
+
+.touch .highlight::after, .touch .scrollToTop{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//custom
+#modal-custom {
+  z-index: 999999999!important;
+}
+.iziModal{
+  max-width: 945px!important;
+  max-height: 595px!important;
+  padding: 0 60px;
+}
+.iziModal-wrap{
+  width: 945px;
+}
+#modal-custom header{
+  background-color: transparent;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0!important;
+  .header-title{
+    margin-bottom: 20px;
+    h1{
+      text-transform: uppercase;
+      font:30px 'UTM Penumbra';
+      color:$color-ogr;
+      margin-bottom: 0;
+    }
+  }
+  .header-desc{
+    p{
+      font: 16px 'UTM Avo';
+      color:#505050;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#modal-custom .sections{
+  margin-top: 45px;
+  padding: 0;
+  .form-group{
+    display: flex;
+    align-items: center;
+    p.text_label{
+      white-space: nowrap;
+      font: 16px 'UTM Avo';
+      text-align: center;
+      color:#505050;
+      margin-bottom: 0;
+      line-height: 16px;
+      span{
+        font-size: 11px;
+      }
+    }
+    input{
+      margin-bottom: 0;
+      &:focus{
+        border-color: $color-ogr;
+      }
+    }
+    .form-control:focus{
+      box-shadow: 0 0 0 0.2rem rgba(245, 125, 6, 0.25);
+    }
+  }
+  button.submit{
+    font:18px 'UTM Avo';
+    color: #ffffff;
+    text-transform: uppercase;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+#modal-custom section button:nth-child(1){
+  background-color: $color-ogr;
+  border-radius: 0;
+}
+#modal-custom header{
+  margin-top: 25px;
+}
+
+#modal-custom .icon-close{
+  right: -70px;
+  top:-15px;
+  width: 36px;
+  height: 36px;
+  background-color: $color-ogr;
+  opacity: 0.1;
+  transition: all 0.5s ease-out;
+  &::before{
+    content: '\f00d';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+  }
+  &:hover{
+    opacity: 0.8;
+    transition: all 0.5s ease-in;
+  }
+  &:focus{
+    outline: none;
+  }
+}

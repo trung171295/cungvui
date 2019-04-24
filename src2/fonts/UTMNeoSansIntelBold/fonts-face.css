@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('UTMNeoSansIntelBold.eot');
+    src: url('UTMNeoSansIntelBold.eot?#iefix') format('embedded-opentype'),
+        url('UTMNeoSansIntelBold.woff2') format('woff2'),
+        url('UTMNeoSansIntelBold.woff') format('woff'),
+        url('UTMNeoSansIntelBold.ttf') format('truetype'),
+        url('UTMNeoSansIntelBold.svg#UTMNeoSansIntelBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

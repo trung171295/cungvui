@@ -1,0 +1,92 @@
+.book_tour{
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    padding: 40px 45px 25px 45px;
+    width: 100%;
+    min-height: 275px;
+    margin-top: -23%;
+    z-index: 99999;
+    .blogs-item-title{
+        display: block;
+        position: absolute;
+        left: 20px;
+        margin-top: -22px;
+        background-color: $color-ogr;
+        padding: 10px 10px;
+        z-index: 9999;
+            h4 {
+                padding: 10px;
+                font: bold 11px 'UTM Avo';
+                color: #ffffff;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                line-height: 0
+            }
+        top: 0;
+    }
+    .headline{
+        margin-bottom: 30px;
+        h2{
+            margin-bottom: 0;
+            font: bold 36px 'UTM Neo Sans Intel';
+            line-height: 38px;
+            a{
+                color: #040404;
+                text-decoration: none;
+            }
+        }
+    }
+    .summary{
+        margin-bottom: 15px;
+        p{
+            margin-bottom: 0;
+            color: #030303;
+        }
+    }
+    .tour-price{
+        li{
+            padding: 0 10px;
+        }
+        li:nth-child(1){
+            a{
+                font: bold 24px 'UTM Neo Sans Intel';
+                color: #fa0707;
+                text-decoration: none;
+            }
+        }
+    }
+    .button_book_tour{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 42px;
+        margin-bottom: -15px;
+        background-color: #fa0707;
+        a{
+            font: bold 18px 'UTM Avo';
+            text-transform: uppercase;
+            text-decoration: none;
+            color:#ffffff;
+            padding:15px 22px;
+            display: flex;
+            align-items: center;
+            span{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                padding:0 15px;
+                border-left: 1px solid #f4705f;
+                img{
+                    object-fit: cover;
+                }
+            }
+            span:nth-child(1){
+                border-left: none;
+            }
+            span:nth-child(2){
+                padding-right: 0;
+            }
+        }
+    }
+}

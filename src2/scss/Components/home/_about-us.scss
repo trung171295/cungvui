@@ -1,0 +1,41 @@
+.about-us{
+    padding-left: 50px;
+}
+.about-us-images{
+    position: relative;
+    .abouts-img1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+    }
+    .abouts-img1 > img{
+        border: 6px solid #fefdfd;
+        object-fit: contain;
+        box-shadow: 0 0px 7px rgba(0,0,0,0.6), 0 0px 7px rgba(0,0,0,0.3);
+        z-index: 88888;
+    }
+    .abouts-img2{
+        position: absolute;
+        top: 25%;
+        left: 48%;
+    }
+    .abouts-img2 > img{
+        border: 6px solid #fefdfd;
+        object-fit: contain;
+        box-shadow: 0 0px 7px rgba(0,0,0,0.6), 0 0px 7px rgba(0,0,0,0.3);
+        z-index: 999999;
+    }
+}
+.about-us-description{
+    .title-welcome{
+        margin-left: -30px;
+        margin-top: -15px;
+    }
+    .title-welcome > h1{
+        @include text-title-abouts;
+    }
+    .summary,.see-details{
+        padding:0 30px;
+    }
+}

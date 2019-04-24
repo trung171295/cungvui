@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('UTMAvo-Italic.eot');
+    src: url('UTMAvo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('UTMAvo-Italic.woff2') format('woff2'),
+        url('UTMAvo-Italic.woff') format('woff'),
+        url('UTMAvo-Italic.ttf') format('truetype'),
+        url('UTMAvo-Italic.svg#UTMAvo-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
