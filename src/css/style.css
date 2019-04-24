@@ -2514,8 +2514,7 @@ body::-webkit-scrollbar-track {
           font: bold 14px 'UTM Avo';
           line-height: 20px;
           transition: all 0.4s ease-out;
-          font-family: "UTM Neo Sans Intel" !important;
-          line-height: 16px; }
+          font-family: "UTM Neo Sans Intel" !important; }
           .list_blogs_sidebar .blogs_sidebar_content .blogs_sidebar_item .bl_item_content .bl_headline h3 a {
             color: #050505;
             text-decoration: none; }
