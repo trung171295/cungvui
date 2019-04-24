@@ -1,0 +1,12 @@
+body{
+    font:14px 'UTM Avo';
+    color:#3a3939;
+    line-height: 1.2rem;
+    background-color: #f3f2f2;
+    position: relative;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 

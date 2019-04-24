@@ -1,0 +1,46 @@
+.main-header{
+    min-height: 156px;
+    position: relative;
+}
+.header-top{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 36px;
+    background-color: rgba($color: #000, $alpha: 0.2);
+    z-index: 9999;
+    border-bottom: 1px solid rgba($color: #b8b7b7, $alpha: 0.8);
+    .header-contact{
+        .nav-header-contact{
+            margin-left: 10px;
+        }
+        .nav-header-contact > li{
+            padding: 0 5px;
+        }
+        .nav-header-contact > li > a{
+            @include text-header;
+        }
+        .nav-header-contact > li:nth-child(1) > a > img{
+            padding-right: 7px;
+        }
+        .nav-header-contact > li:nth-child(2) > a > img{
+            padding-right: 17px;
+        }
+    }
+    .header-language{
+        margin-left: auto;
+        .nav-language > li{
+            padding: 0 8px;
+        }
+        .nav-language > li > a{
+            @include text-header;
+        }
+        .nav-language > li > a.active{
+            color:$color-ogr;
+        }
+    }
+}
+.menu_mobile_top,.menu_mobile{
+    display: none;
+}
+@import 'Components/_nav-top.scss';

@@ -1,0 +1,143 @@
+.social_networks{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 30vh;
+    z-index: 9999999999999999999;
+    @media screen and (max-width:768px){
+        display: none;
+    }
+    .social_item{
+        margin-bottom: 5px;
+        &:hover a{
+            i{
+                transform: scale(1.2);
+            }
+            span{
+                visibility: visible;
+                left: -160px;
+                opacity: 1;
+                cursor: pointer;
+            }
+        } 
+        a{
+            color: #ffffff!important;
+            display: block;
+            height: 40px;
+            background-color: $color-ogr;
+            position: relative;
+            text-align: center;
+            font-size: 18px;
+            line-height: 40px;
+            width: 40px;
+            cursor: pointer;
+            z-index: 99999999;
+            span{
+                color: #ffffff;
+                line-height: 40px;
+                left: -260px;
+                position: absolute;
+                text-align: center;
+                min-width: 160px;
+                visibility: hidden;
+                transition-duration: 0.4s;
+                z-index: 1;
+                opacity: 0;
+            }
+        }
+    }
+    .social_item:nth-child(1):hover{
+        transition:  all 0.4s ease-in;
+        a{
+            background-color: $color-fb;
+            i{
+                color: $color-fb!important;
+                transform: scale(1.2);
+                transition:  all 0.2s ease-in;
+            }
+            span{
+                background-color: $color-fb;
+            }
+        }
+    }
+    .social_item:nth-child(2):hover{
+        transition:  all 0.3s ease-in;
+        a{
+            background-color: $color-phone;
+            i{
+                color: $color-phone;
+                transform: scale(1.2);
+            }
+            span{
+                background-color: $color-phone;
+            }
+        }
+    }
+    .social_item:nth-child(3):hover{
+        transition:  all 0.3s ease-in;
+        a{
+            background-color: $color-gplus;
+            i{
+                color: $color-gplus;
+                transform: scale(1.2);
+            }
+            span{
+                background-color: $color-gplus;
+            }
+        }
+    }
+    .social_item:nth-child(4):hover{
+        transition:  all 0.3s ease-in;
+        a{
+            background-color: $color-tw;
+            i{
+                color: $color-tw;
+                transform: scale(1.2);
+            }
+            span{
+                background-color: $color-tw;
+            }
+        }
+    }
+
+    .social_item:nth-child(1){
+        a{
+            i{
+                color: $color-fb;
+            }
+            span{
+                background-color: $color-fb;
+            }
+        }
+    }
+    .social_item:nth-child(2){
+        a{
+            i{
+                color: $color-phone;
+            }
+            span{
+                background-color: $color-phone;
+            }
+        }
+    }
+    .social_item:nth-child(3){
+        a{
+            i{
+                color: $color-gplus;
+            }
+            span{
+                background-color: $color-gplus;
+            }
+        }
+    }
+    .social_item:nth-child(4){
+        a{
+            i{
+                color: $color-tw;
+            }
+            span{
+                background-color: $color-tw;
+            }
+        }
+    }
+}

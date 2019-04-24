@@ -1,0 +1,329 @@
+@import 'Base/_normalize.scss';
+@import 'Base/_reset.scss';
+@import 'Helpers/_fonts.scss';
+@import 'Helpers/_variables.scss';
+@import 'Helpers/_mixin.scss';
+@import 'Helpers/_assets.scss';
+@media only screen and (max-width: 768px) {
+    ///////////////////////////////////////////////////////////////------------------index------------------------------/////////////////////////////////////////////////////////////////////////
+	//header
+
+	.main-header {
+        width: 100%;
+        min-height: 52px;
+		display: block;
+
+		//header-top
+		.header-top,
+		.menu-header {
+			display: none;
+		}
+
+		//navigation_menu_top
+		.menu_mobile_top {
+            display: block;
+            position: relative;
+            width: 100%;
+            min-height: 52px;
+            z-index: 999999999999;
+			.nav_menu_mobile_top {
+				display: flex;
+				align-items: center;
+				background-color: #ffffff;
+				width: 100%;
+				li.logo_menu_mobile {
+					background-color: $color-ogr;
+					padding: 0;
+				}
+				li.bar {
+                    margin-left: auto;
+                    margin-right: 20px;
+					.btn_bar {
+						display: block;
+						width: 42px;
+                        height: 24px;
+						span {
+							display: block;
+                            position: relative;
+							width: 100%;
+							height: 5px;
+                            background-color: $color-ogr;
+                            transition: all 0.3s linear;
+							cursor: pointer;
+							&::before,
+							&::after {
+								content: '';
+								position: absolute;
+								display: block;
+								top: calc(0% + 10px);
+								left: 0;
+								width: 100%;
+								height: 5px;
+								background-color: $color-ogr;
+							}
+							&::after {
+								top: calc(100% + 15px);
+							}
+                        }
+                        &:focus{
+                            outline: none;
+                            width: 35px;
+                            span{
+                                visibility: hidden;
+                                transition: all 0.2s ease-out;
+                            }
+                            span:before{
+                                top: 10px;
+                                left: 0;
+                                height: 7px;
+                                border-radius: 25px;
+                                visibility: visible;
+                                transform: skewY(45deg);
+                                transition: all 0.3s ease-in;
+                            }
+                            span::after{
+                                top: calc(100% + 5px);
+                                left: 0;
+                                height: 7px;
+                                border-radius: 25px;
+                                visibility: visible;
+                                transform: skewY(-45deg);
+                                transition: all 0.3s ease-in;
+                            }
+                        }
+					}
+				}
+			}
+        }
+        
+        //menu_mobile
+        .menu_mobile{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            z-index: 99999999999999;
+        }
+	}
+
+    //end header
+    
+    //slideshow
+    .slideshow{
+        margin-top: 0;
+        height: 45vh;
+        .nav-slide-social,.line-vertical{
+            display: none;
+        }
+    }
+
+    //main-1
+    .main-1{
+        min-height: 1000px;
+        background-size: cover;
+        .tour-hot{
+            margin-top: -5%;
+            margin-bottom: 35px;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            .container{
+                padding: 0!important;
+                width: 100%!important;
+            }
+            .tour-hot-wrap{
+                width: 100%;
+                height: auto;
+                .button-tour-control{
+                    height: 140px;
+                    margin-top: -45%;
+                }
+                .slide-tour-hot{
+                    height: auto;
+                    .swiper-slide{
+                        .tour-hot-item{
+                            display: block;
+                            .tour-hot-item-img{
+                                display: block;
+                                width: 100%;
+                                box-shadow: none;
+                            }
+                            .tour-hot-item-content {
+                                width: 100%;
+                                background-color: transparent;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about-us{
+            position: absolute;
+            top: 53%;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //////////foooter
+    .main-footer{
+        min-height: 523px;
+        padding: 0 40px;
+        .cusomer-feedback{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .input-mail{
+                width: 100%;
+                #mail{
+                    width: 100%;
+                }
+                .button{
+                    width: auto;
+                    white-space: nowrap;
+                    padding: 0 10px;
+                }
+            }
+        }
+        .end-footer{
+            display: flex;
+            justify-content: center;
+            border: none;
+            text-align: center;
+            .footer-group-menu{
+                display: none;
+            }
+        }
+        .copyright{
+            display: none;
+        }
+    }
+    .line{
+        width: 100%;
+        &::before{
+            width: 20%;
+        }
+    }
+    //////////////////////////////////////////////////////////////-------------------------------------------gioi-thieu-----------------------------------//////////////////////////////////////////////////////
+
+    //////////////banner
+    .banner{
+        width: 100%;
+        height: 45vh;
+        display: block;
+        background-repeat:no-repeat;
+        .block_hidden{
+            display: none;
+        }
+    }
+
+    //////////main-content
+    .main_content{
+        margin-bottom: 50;
+        padding-bottom: 60px;
+        min-height: auto;
+
+        ////////sidebar
+        .sidebar{
+            padding-right: 0px;
+            .sidebar_top{
+                padding: 50px 40px 40px 40px;
+                margin-top: 0;
+                .blogs_title{
+                    left: 5%;
+                    width: auto;
+                }
+                .group_title_name{
+                    margin-top: 0;
+                }
+                .group_desc{
+                    margin-top: 30px;
+                    margin-bottom: 0;
+                    p{
+                        font: italic 14px 'UTM Avo';
+                        color: #030303;
+                    }
+                }
+                .menu_sidebar{
+                    display: none;
+                }
+            }
+            .list_blogs_sidebar{
+                display: none;
+            }
+        }
+
+        ///////////blogs_content_details
+        .blogs_content_details{
+            margin-top: 0;
+            padding-top: 0px;
+            padding-left: 40px;
+            padding-right: 40px;
+            .blogs_main{
+                .main_headline{
+                    margin-top: 30px;
+                }
+                .main_summary{
+                    margin-top: 38px;
+                    h3{
+                        line-height: 22px;
+                    }
+                }
+                .main_body{
+                    padding: 30px 0;
+                    p{
+                        font: 16px;
+                        line-height: 22px;
+                        color:#030303 'UTM Avo';
+                    }
+                }
+                .blogs_item_first{
+                    margin-top: 15px;
+                    display: block;
+                    height: auto;
+                }
+            }
+        }
+        .list_blogs_sidebar.mobile{
+            display: block;
+            margin-top: 60px;
+            .list_title{
+                margin-bottom: 20px;
+            }
+            .blogs_sidebar_content{
+                margin-top: 25px;
+                padding: 0 40px;
+                .blogs_sidebar_item{
+                    .bl_headline{
+                        h3{
+                            font-size: 18px;
+                            a{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .line_circle{
+            width: 80%;
+        }
+    }
+
+}
+@media all and (min-width: 960px) and (max-width: 1199px) { }
+@media all and (min-width: 768px) and (max-width: 959px) {  }
+@media all and (min-width: 480px) and (max-width: 767px){  }
+@media all and (max-width: 599px) { }
+@media all and (max-width: 479px) { }

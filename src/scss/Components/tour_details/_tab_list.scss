@@ -1,0 +1,75 @@
+.book_tour_content{
+    margin-top: 50px;
+}
+.list_tab_procedure{
+    .nav_list_tab_procedure{
+        border-top: 1px solid #b9b8b7;
+        border-bottom: 4px solid #b9b8b7;
+        padding-top: 3px;
+        li{
+            a{
+                font: bold 16px 'UTM Neo Sans Intel';
+                color: #5f5d5d;
+                padding:12px 30px;
+                text-transform: uppercase;
+                display: inline-block;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: calc(0% - 4px);
+                    display: block;
+                    height: 50%;
+                    width: 1px;
+                    transform: translateY(-50%);
+                    background-color: #b9b8b7;
+                }
+            }
+            a.active{
+                background-color: #b9b8b7;
+                color: #070707;
+                padding:12px 30px;
+                transition: all 0.2s linear;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: calc(0% - 4px);
+                    display: block;
+                    height: 50%;
+                    width: 1px;
+                    transform: translateY(-50%);
+                    background-color: #b9b8b7;
+                }
+            }
+        }
+        li:nth-child(1){
+            a.active{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        li:last-child(){
+            a{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.tab_book_tour_content{
+    padding: 42px 52px 60px 52px;
+    background-color: #ffffff;
+    min-height: 1350px;
+    p{
+        color: #000000;
+        img{
+            width: 100%;
+            object-fit: cover;
+            border: 5px solid #c5c3c3;
+        }
+    }
+}

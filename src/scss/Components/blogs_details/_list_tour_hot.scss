@@ -1,0 +1,24 @@
+.list_tour_hot{
+    margin-top: 50px;
+    .list_tour_hot_title{
+        margin-bottom: 15px;
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+            font: 24px 'UTM Penumbra';
+            color: $color-ogr;
+            margin-bottom: 0;
+        }
+    }
+    .list_tour{
+        margin-top: 40px;
+    }
+}
+.advertisement{
+    padding-top: 50px;
+    img{
+        cursor: pointer;
+        object-fit: cover;
+        width: 100%;
+    }
+}

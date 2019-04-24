@@ -1,0 +1,33 @@
+@keyframes topdown{
+    from{
+        .nav-menu-header > li{
+            a{
+                filter: blur(3px $color-white-lite);
+            }
+            &::before{
+                height: 100%;
+            }
+        }
+    }
+    50%{
+        .nav-menu-header > li{
+            a{
+                filter: blur(1px $color-ogr);
+            }
+            &::before{
+                height: 20%;
+                transition-duration: 0.4s;
+            }
+        }
+    }
+    100%{
+        .nav-menu-header > li{
+            a{
+                color: $color-ogr;
+            }
+            &::before{
+                height: 4px;
+            }
+        }
+    }
+}
