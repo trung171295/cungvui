@@ -673,8 +673,8 @@
 	}
 	.list_tour_content {
 		.list_tour_container {
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: auto auto;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
 			justify-content: center;
 			padding: 0 40px;
 		}
