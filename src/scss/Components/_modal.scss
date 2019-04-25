@@ -1,15 +1,8 @@
 .iziModal .iziModal-content p{
   margin-bottom: 10px;
 }
-.iziModal{
-  z-index: 9999999!important;
-}
 #modal-welcome, #modal-alert{
   background: rgba(255,255,255,0.1);
-}
-.iziModal-overlay{
-  z-index: 999997!important;
-  background-color: rgba(0, 0, 0, 0.6)!important;
 }
 
 #modal-iframe{
@@ -635,6 +628,9 @@
 
 
 //custom
+#modal-custom {
+  z-index: 999999999!important;
+}
 .iziModal{
   max-width: 945px!important;
   max-height: 595px!important;
@@ -672,6 +668,27 @@
   .form-group{
     display: flex;
     align-items: center;
+    .dblock_value{
+      display: block;
+      padding: 10px;
+      width: 100%;
+      span{
+        display: block;
+        margin-left: 18%;
+        color: #fa0707;
+        font: italic 14px 'UTM Avo';
+        position: relative;
+        &::before{
+          content: '(*)';
+          position: absolute;
+          top: 50%;
+          left: -5%;
+          transform: translateY(-50%);
+          color: #fa0707;
+          font: italic 14px 'UTM Avo';
+        }
+      }
+    }
     p.text_label{
       white-space: nowrap;
       font: 16px 'UTM Avo';

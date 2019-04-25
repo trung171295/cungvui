@@ -3,6 +3,7 @@
     .tour-blogs-item-first{
         width: 100%;
         height: 100%;
+        padding-right: 8px!important;
         .tour-blogs-item-first-img{
             width: 100%;
             height: 100%;
@@ -36,6 +37,7 @@
         }
     }
     .tour-blogs-list-item{
+        padding-left: 8px!important;
         .tour-blogs-item{
             width: 100%;
             height: calc(100% / 3 - 10px);

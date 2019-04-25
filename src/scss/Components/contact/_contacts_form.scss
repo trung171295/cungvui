@@ -2,14 +2,34 @@
     margin-top: 30px;
     form{
         .form-group{
-            display: flex;
-            align-items: center;
-            label{
+            .dblock_value{
+                display: block;
+                padding: 10px;
+                width: 100%;
+                span{
+                  display: block;
+                  margin-left: 20%;
+                  color: #fa0707;
+                  font: italic 14px 'UTM Avo';
+                  position: relative;
+                  &::before{
+                    content: '(*)';
+                    position: absolute;
+                    top: 50%;
+                    left: -5%;
+                    transform: translateY(-50%);
+                    color: #fa0707;
+                    font: italic 14px 'UTM Avo';
+                  }
+                }
+              }
+            .label{
                 white-space: nowrap;
-                width: 15%;
                 padding-right: 25px;
                 font: 14px 'UTM Avo';
                 color:#3a3939;
+                margin-bottom: 0;
+                margin-top: 5px;
             }
             input,textarea{
                 float: right;
@@ -26,11 +46,8 @@
 
     }
     .btn{
-        .empty{
-            width: 12%;
-        }
-        .btn_submit{
-            width: 30%;
+        .btn_submit[type=submit]{
+            width: auto;
             display: flex;
             background-color: $color-ogr;
             padding:15px;
@@ -40,6 +57,12 @@
             text-transform: uppercase;
             text-decoration: none;
             border-color: transparent;
+            box-shadow: none;
+            border: none;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
             span{
                 padding-left: 10px;
                 margin-left: 10px;

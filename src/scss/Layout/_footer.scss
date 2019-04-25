@@ -46,9 +46,14 @@
                 vertical-align: middle;
                 .btn-sumit{
                     color:#fdfbfb;
+                    border: none;
+                    background-color: transparent;
                     text-transform: uppercase;
                     font: bold 14px 'UTM Avo';
                     text-decoration: none;
+                    &:focus{
+                        outline: none;
+                    }
                 }
             }
         }

@@ -15,7 +15,7 @@ $(document).ready(function(){
         borderBottom: true,
         padding: 0,
         radius: 3,
-        zindex: 999,
+        zindex: 999999,
         iframe: false,
         iframeHeight: 400,
         iframeURL: null,
@@ -37,26 +37,22 @@ $(document).ready(function(){
         appendToOverlay: 'body', // or false
         overlay: true,
         overlayClose: true,
-        overlayColor: 'rgba(0, 0, 0, 0.4)',
-        timeout: false,
-        timeoutProgressbar: false,
+        overlayColor: 'rgba(0, 0, 0, 0.6)',
+        timeout: true,
+        timeoutProgressbar: true,
         pauseOnHover: false,
         timeoutProgressbarColor: 'rgba(255,255,255,0.5)',
         transitionIn: 'comingIn',
         transitionOut: 'comingOut',
         transitionInOverlay: 'fadeIn',
-        transitionOutOverlay: 'fadeOut'
-
-    });
-
-    $("#modal-custom").iziModal({
-        
+        transitionOutOverlay: 'fadeOut',
         onOpened: function() {
             //console.log('onOpened');
         },
         onClosed: function() {
             //console.log('onClosed');  
         }
+
     });
     $("#modal-custom").on('click', 'header a', function(event) {
         event.preventDefault();
@@ -102,10 +98,4 @@ $(document).ready(function(){
             }, 1500);
         }
     });
-    
-    
-    
-    
-    
-    
 })
