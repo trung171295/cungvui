@@ -1,0 +1,31 @@
+.tour-travel {
+	padding: 50px 0;
+	.list-item-tour-travel {
+		margin-bottom: 75px;
+		min-height: 330px;
+		.tour-desc {
+			.tour-sites {
+				h2 {
+					@include title_group;
+				}
+			}
+		}
+		.tour-summary {
+			margin-top: 25px;
+			display: block;
+		}
+		.button-controls {
+			position: absolute;
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			width: 90%;
+			.button-tour-travel-control {
+				margin-left: auto;
+			}
+		}
+	}
+	.list-item-blogs-travel {
+        min-height: 420px;
+	}
+}

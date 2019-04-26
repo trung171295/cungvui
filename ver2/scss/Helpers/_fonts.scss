@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('../fonts/UTMAvo/UTMAvo.eot');
+    src: url('../fonts/UTMAvo/UTMAvo.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMAvo/UTMAvo.woff2') format('woff2'),
+        url('../fonts/UTMAvo/UTMAvo.woff') format('woff'),
+        url('../fonts/UTMAvo/UTMAvo.ttf') format('truetype'),
+        url('../fonts/UTMAvo/UTMAvo.svg#UTMAvo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('../fonts/UTMAvo-BoldItalic/UTMAvo-BoldItalic.eot');
+    src: url('../fonts/UTMAvo-BoldItalic/UTMAvo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMAvo-BoldItalic/UTMAvo-BoldItalic.woff2') format('woff2'),
+        url('../fonts/UTMAvo-BoldItalic/UTMAvo-BoldItalic.woff') format('woff'),
+        url('../fonts/UTMAvo-BoldItalic/UTMAvo-BoldItalic.ttf') format('truetype'),
+        url('../fonts/UTMAvo-BoldItalic/UTMAvo-BoldItalic.svg#UTMAvo-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('../fonts/UTMAvo-Italic/UTMAvo-Italic.eot');
+    src: url('../fonts/UTMAvo-Italic/UTMAvo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMAvo-Italic/UTMAvo-Italic.woff2') format('woff2'),
+        url('../fonts/UTMAvo-Italic/UTMAvo-Italic.woff') format('woff'),
+        url('../fonts/UTMAvo-Italic/UTMAvo-Italic.ttf') format('truetype'),
+        url('../fonts/UTMAvo-Italic/UTMAvo-Italic.svg#UTMAvo-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('../fonts/UTMAvoBold/UTMAvoBold.eot');
+    src: url('../fonts/UTMAvoBold/UTMAvoBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMAvoBold/UTMAvoBold.woff2') format('woff2'),
+        url('../fonts/UTMAvoBold/UTMAvoBold.woff') format('woff'),
+        url('../fonts/UTMAvoBold/UTMAvoBold.ttf') format('truetype'),
+        url('../fonts/UTMAvoBold/UTMAvoBold.svg#UTMAvoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.eot');
+    src: url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.woff2') format('woff2'),
+        url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.woff') format('woff'),
+        url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.ttf') format('truetype'),
+        url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.svg#UTMNeoSansIntel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('../fonts/UTMNeoSansIntel-BoldItalic/UTMNeoSansIntel-BoldItalic.eot');
+    src: url('../fonts/UTMNeoSansIntel-BoldItalic/UTMNeoSansIntel-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMNeoSansIntel-BoldItalic/UTMNeoSansIntel-BoldItalic.woff2') format('woff2'),
+        url('../fonts/UTMNeoSansIntel-BoldItalic/UTMNeoSansIntel-BoldItalic.woff') format('woff'),
+        url('../fonts/UTMNeoSansIntel-BoldItalic/UTMNeoSansIntel-BoldItalic.ttf') format('truetype'),
+        url('../fonts/UTMNeoSansIntel-BoldItalic/UTMNeoSansIntel-BoldItalic.svg#UTMNeoSansIntel-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('../fonts/UTMNeoSansIntel-Italic/UTMNeoSansIntel-Italic.eot');
+    src: url('../fonts/UTMNeoSansIntel-Italic/UTMNeoSansIntel-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMNeoSansIntel-Italic/UTMNeoSansIntel-Italic.woff2') format('woff2'),
+        url('../fonts/UTMNeoSansIntel-Italic/UTMNeoSansIntel-Italic.woff') format('woff'),
+        url('../fonts/UTMNeoSansIntel-Italic/UTMNeoSansIntel-Italic.ttf') format('truetype'),
+        url('../fonts/UTMNeoSansIntel-Italic/UTMNeoSansIntel-Italic.svg#UTMNeoSansIntel-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('../fonts/UTMNeoSansIntelBold/UTMNeoSansIntelBold.eot');
+    src: url('../fonts/UTMNeoSansIntelBold/UTMNeoSansIntelBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMNeoSansIntelBold/UTMNeoSansIntelBold.woff2') format('woff2'),
+        url('../fonts/UTMNeoSansIntelBold/UTMNeoSansIntelBold.woff') format('woff'),
+        url('../fonts/UTMNeoSansIntelBold/UTMNeoSansIntelBold.ttf') format('truetype'),
+        url('../fonts/UTMNeoSansIntelBold/UTMNeoSansIntelBold.svg#UTMNeoSansIntelBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UTM Copperplate';
+    src: url('../fonts/UTMCopperplate/UTMCopperplate.eot');
+    src: url('../fonts/UTMCopperplate/UTMCopperplate.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMCopperplate/UTMCopperplate.woff2') format('woff2'),
+        url('../fonts/UTMCopperplate/UTMCopperplate.woff') format('woff'),
+        url('../fonts/UTMCopperplate/UTMCopperplate.ttf') format('truetype'),
+        url('../fonts/UTMCopperplate/UTMCopperplate.svg#UTMCopperplate') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UTM Copperplate';
+    src: url('../fonts/UTMCopperplateBold/UTMCopperplateBold.eot');
+    src: url('../fonts/UTMCopperplateBold/UTMCopperplateBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMCopperplateBold/UTMCopperplateBold.woff2') format('woff2'),
+        url('../fonts/UTMCopperplateBold/UTMCopperplateBold.woff') format('woff'),
+        url('../fonts/UTMCopperplateBold/UTMCopperplateBold.ttf') format('truetype'),
+        url('../fonts/UTMCopperplateBold/UTMCopperplateBold.svg#UTMCopperplateBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Gotham-Light';
+    src: url('../fonts/SVN-Gotham-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Gotham-Bold';
+    src: url('../fonts/SNV-GothamBold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'UTM bebas';
+	src: url('../fonts/UTM Bebas.ttf') ;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'UTM-SVN-Gotham-Light';
+	src: url('../fonts/SVN-Gotham-Light.otf') ;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'UTM Penumbra';
+	src: url('../fonts/154_Vectordep.vn_UTM Penumbra.ttf') ;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'UTM Pacific Standard';
+	src: url('../fonts/UTM Pacific Standard.ttf') ;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'UTM Mobifone KT';
+	src: url('../fonts/UTM Mobifone KT.ttf') ;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'UTM Daxline';
+	src: url('../fonts/UTM Dax.ttf') ;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { font-family: 'mazda'; src: url("../fonts/mazda/mazda-rg.eot"); src: url("../fonts/mazda/mazda-rg.eot?#iefix") format("embedded-opentype"), url("../fonts/mazda/mazda-rg.woff") format("woff"), url("../fonts/mazda/mazda-rg.ttf") format("truetype"), url("../fonts/mazda/mazda-rg.svg#mazda") format("svg"); }
+@font-face { font-family: 'mazda-bold'; src: url("../fonts/mazda/mazda-bd.eot"); src: url("../fonts/mazda/mazda-bd.eot?#iefix") format("embedded-opentype"), url("../fonts/mazda/mazda-bd.woff") format("woff"), url("../fonts/mazda/mazda-bd.ttf") format("truetype"), url("../fonts/mazda/mazda-bd.svg#mazda-bold") format("svg"); }
+@font-face {
+	font-family: 'Mazda_0';
+	src: url('../fonts/mazda.ttf') ;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Mazda_Rg_0';
+	src: url('../fonts/mazda-rg.ttf') ;
+	font-weight: normal;
+	font-style: normal;
+}

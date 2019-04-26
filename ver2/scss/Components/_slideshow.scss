@@ -1,0 +1,87 @@
+.slideshow{
+    display: block;
+    position: relative;
+    margin-top: calc(0% - 156px);
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+.swiper-slideshow{
+    height: 100%;
+    position: relative;
+    .swiper-slide .slide-img{
+        height: 100%;
+        cursor: pointer;
+    }
+    .swiper-slide .slide-img img{
+        width: 100%;
+        height: 100%;
+       object-fit: cover;
+       object-position: center center; 
+    }
+    .nav-slide-social{
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+        z-index: 9999;
+        transition: all 0.5s ease-in;
+    }
+    .nav-slide-social > li{
+        padding: 10px 15px;
+        text-align: center;
+    }
+    .nav-slide-social > li >a{
+        color: $color-white-lite;
+        font-size: 16px;
+    }
+    .nav-slide-social > li:hover:nth-child(1){
+        a{
+            color: $color-fb;
+        }
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.2);
+    }
+    .nav-slide-social > li:hover:nth-child(2){
+        a{
+            color: $color-phone;
+        }
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.2);
+    }
+    .nav-slide-social > li:hover:nth-child(3){
+        a{
+            color: $color-gplus;
+        }
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.2);
+    }
+    .nav-slide-social > li:hover:nth-child(4){
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.2);
+    }
+    .line-vertical{
+        position: absolute;
+        bottom: 0;
+        right: calc(10% + 15px);
+        transform: translateX(-9px);
+        width: 1px;
+        height: calc(15% - 12px);
+        background-color: $color-white-lite;
+        z-index: 9999;
+        transition: all 0.3s ease-in;
+    }
+}
+.nav-slide-social.hidden{
+    right: 0%;
+    opacity: 0;
+    transform: translate(30vh,30vh);
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+}
+.line-vertical.hidden{
+    right: -5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+}

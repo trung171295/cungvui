@@ -1,0 +1,98 @@
+@mixin title_group() {
+	font: bold 24px 'UTM Penumbra';
+	color: #000000;
+}
+@mixin price_tour{
+	font: bold 18px 'Utm Neo Sans Intel';
+	color:$color-price-tour;
+}
+@mixin price_tour_old{
+	font: 14px 'Utm Neo Sans Intel';
+	color:$color-price-tour-old;
+}
+@mixin price {
+	font: bold 24px 'UTM Neo Sans Intel';
+	color: $color-ogr;
+	text-decoration: none;
+}
+@mixin price_old {
+	font: 14px 'UTM Neo Sans Intel';
+	color: $color-price-old;
+	text-decoration-line: line-through;
+	text-decoration-color: $color-price-old;
+}
+@mixin text-menu{
+	font: 14px 'UTM Penumbra';
+	line-height: 32px;
+	color: $color-text-menu;
+	text-transform: uppercase;
+}
+@mixin headline {
+	font: bold 18px 'UTM Neo Sans Intel';
+	transition: all 0.4s ease-out;
+	a{
+		line-height: 20px;
+		color: $color-headline;
+		text-decoration: none;
+	}
+}
+@mixin see_details {
+	font: 14px 'UTM Avo';
+	color: $color-ogr;
+	text-transform: uppercase;
+}
+@mixin headline_blogs {
+    font: bold 14px 'UTM Avo';
+	line-height: 20px;
+	transition: all 0.4s ease-out;
+	a{
+		color:$color-headline;
+		text-decoration: none;
+	}
+}
+@mixin push_date {
+    font: 12px 'UTM AVo';
+    color:$color-push-date;
+}
+@mixin text-header {
+    font: 12px 'UTM Avo';
+	color: $color-white-lite;
+	text-decoration: none;
+}
+@mixin text-title-abouts {
+	font: 36px 'UTM Penumbra';
+	color: $color-ogr;
+	text-transform: uppercase;
+}
+@mixin text-hover {
+	// text-shadow: 4px 6px 4px;
+	// transition: all 0.2s ease-out;
+}
+@mixin title_dk_footer {
+	font: 24px 'UTM Penumbra';
+	color: #000000;
+	text-transform: uppercase;
+}
+@mixin text_footer {
+	font:14px 'UTM Avo';
+	color:#bab1b1;
+	line-height: 18px;
+}
+@mixin copyright{
+	font: 14px 'UTM Avo';
+	color: #ffffff;
+	margin:0; 
+}
+@mixin headline_details {
+	font: 36px 'UTM Penumbra';
+	color:$color-ogr;
+	text-transform: uppercase;
+	line-height: 44px;
+}
+@mixin blogs_title {
+	font: 30px 'UTM Avo';
+	a{
+		color:#040404;
+		text-decoration: none;
+	}
+}

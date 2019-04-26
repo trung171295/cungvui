@@ -1,0 +1,83 @@
+.see-details > a{
+    @include see_details;
+    .fa-arrow-right{
+        margin-left: 10px;
+    }
+}
+
+//////////////xem chi tiet
+
+.button-see-details{
+    padding: 15px 30px;
+    background-color: $color-ogr;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        font: bold 12px 'UTM Avo';
+        color:#f7e6de;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+///////////////// swiper controls
+.swiper-button-next-tour,
+.swiper-button-prev-tour {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $color-white-lite;
+    background-color: $color-ogr;
+    cursor: pointer;
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+.swiper-button-next-tour-mobile,
+.swiper-button-prev-tour-mobile{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $color-white-lite;
+    background-color: $color-ogr;
+    cursor: pointer;
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+.swiper-button-disabled{
+    background-color: #ffffff;
+    color: #bebaba;
+}
+.button-tour-travel-control {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto;
+    .swiper-button-next-tour-travel,.swiper-button-prev-tour-travel{
+        display: block;
+        padding: 18px 15px;
+        background-color: $color-ogr;
+        color: $color-white-lite;
+        cursor: pointer;
+        &:focus{
+            outline: none;
+        }
+    }
+    .swiper-button-disabled{
+        background-color: #ffffff;
+        color: #bebaba;
+        &:focus{
+            outline: none;
+        }
+    }
+}
