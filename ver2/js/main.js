@@ -11,7 +11,7 @@ $(document).ready(function() {
 	////////////loadding ...
 	setTimeout(function(){
 		$(".multi-spinner-container").remove();
-	},1000);
+	});
 	////////////////////menu
 	$(function () {
 		$('nav#menu').mmenu({
@@ -60,5 +60,5 @@ $(document).ready(function() {
 	$(window).on('scroll',function(){
 		($(window).scrollTop() > hidden + 100) ? $('.nav-slide-social,.line-vertical').addClass('hidden') && $('.social_networks').addClass('hidden')  : $('.nav-slide-social,.line-vertical').removeClass('hidden') && $('.social_networks').removeClass('hidden');
 	});
-	////////////
+	////////////s
 });

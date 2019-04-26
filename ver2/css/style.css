@@ -1274,6 +1274,8 @@ nav:not(.mm-menu) {
     .breadcrumb li.breadcrumb-item a:hover {
       font-weight: bold;
       text-shadow: 0 5x 15px #818181; }
+  .breadcrumb li.breadcrumb-item:nth-child(1) a svg {
+    margin-top: -5px; }
   .breadcrumb li.breadcrumb-item.active {
     color: #818181;
     font: 12px 'UTM Avo'; }
@@ -1285,24 +1287,6 @@ nav:not(.mm-menu) {
   content: "" !important;
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
-
-.nav-slide-social.hidden {
-  right: 0%;
-  opacity: 0;
-  transform: translate(30vh, 30vh);
-  visibility: hidden;
-  transition: all 0.5s ease-out; }
-
-.line-vertical.hidden {
-  right: -5%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease-out; }
-
-.social_networks.hidden {
-  right: 0;
-  visibility: visible;
-  transition: all 0.8s ease-in; }
 
 .see-details > a {
   font: 14px 'UTM Avo';
@@ -1953,6 +1937,7 @@ nav:not(.mm-menu) {
     left: 0;
     width: 90%; }
   .about-us-images .abouts-img1 > img {
+    width: 100%;
     border: 6px solid #fefdfd;
     object-fit: contain;
     box-shadow: 0 0px 7px rgba(0, 0, 0, 0.6), 0 0px 7px rgba(0, 0, 0, 0.3);
@@ -1962,6 +1947,7 @@ nav:not(.mm-menu) {
     top: 25%;
     left: 48%; }
   .about-us-images .abouts-img2 > img {
+    width: 100%;
     border: 6px solid #fefdfd;
     object-fit: contain;
     box-shadow: 0 0px 7px rgba(0, 0, 0, 0.6), 0 0px 7px rgba(0, 0, 0, 0.3);
@@ -1977,7 +1963,7 @@ nav:not(.mm-menu) {
   text-transform: uppercase; }
 
 .about-us-description .summary, .about-us-description .see-details {
-  padding: 0 30px; }
+  padding: 0 20px; }
 
 .main-2 {
   margin-top: 20px; }
@@ -2296,7 +2282,7 @@ nav:not(.mm-menu) {
     right: 0;
     background-color: #ffffff;
     padding: 30px 15px 30px 20px;
-    z-index: 99999; }
+    z-index: 999; }
     .blogs_item_first .blogs_item_first_content .headline {
       margin-bottom: 20px; }
       .blogs_item_first .blogs_item_first_content .headline h2 {
@@ -2484,8 +2470,7 @@ nav:not(.mm-menu) {
 
 .main_content {
   position: relative;
-  margin-bottom: 60px;
-  min-height: 1570px; }
+  margin-bottom: 60px; }
 
 .sidebar {
   padding-right: 30px; }

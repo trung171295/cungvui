@@ -48,6 +48,10 @@ $(document).ready(function() {
 					slidesPerView: 1,
 					spaceBetween: 30,
 				},
+				996:{
+					slidesPerView: 1,
+					spaceBetween: 30,
+				},
 				1024:{
 					slidesPerView: 1,
 					spaceBetween: 30,
@@ -108,10 +112,13 @@ $(document).ready(function() {
 			  spaceBetween: 20,
 			  slidesPerColumn:3,
 			},
+			996:{
+			  slidesPerView: 3,
+			  spaceBetween: 15,
+			},
 			768: {
-			  slidesPerView: 1,
-			  spaceBetween: 20,
-			  slidesPerColumn:3,
+			  slidesPerView: 3,
+			  spaceBetween: 15,
 			},
 			640: {
 			  slidesPerView: 1,
@@ -142,10 +149,13 @@ $(document).ready(function() {
 			  spaceBetween: 20,
 			  slidesPerColumn:3,
 			},
+			996:{
+			  slidesPerView: 3,
+			  spaceBetween: 15,
+			},
 			768: {
-			  slidesPerView: 1,
-			  spaceBetween: 20,
-			  slidesPerColumn:3,
+			  slidesPerView: 3,
+			  spaceBetween: 15,
 			},
 			640: {
 			  slidesPerView: 1,
@@ -176,10 +186,13 @@ $(document).ready(function() {
 			  spaceBetween: 20,
 			  slidesPerColumn:3,
 			},
+			996:{
+			  slidesPerView: 3,
+			  spaceBetween: 15,
+			},
 			768: {
-			  slidesPerView: 1,
-			  spaceBetween: 20,
-			  slidesPerColumn:3,
+			  slidesPerView: 3,
+			  spaceBetween: 15,
 			},
 			640: {
 			  slidesPerView: 1,
