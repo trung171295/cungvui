@@ -3,17 +3,17 @@
     .list_tour_container{
         min-height: 930px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-column-gap: 20px;
-        grid-row-gap: 22px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 30px;
+        grid-row-gap: 40px;
         .tour_item{
             .tour_item_img{
                 width: 100%;
                 img{
                     object-fit: cover;
                     width: 100%;
-                    max-height: 220px;
+                    max-height: 270px;
                 }
             }
             .tour-price{

@@ -11,75 +11,9 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <style>
-        nav:not(.mm) {
-            display: none;
-        }
-
-        .header,
-        .content,
-        .footer {
-            text-align: center;
-        }
-
-        .header,
-        .footer {
-            background: #4bb5ef;
-            font-size: 16px;
-            font-weight: bold;
-            color: #fff;
-            line-height: 40px;
-
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            width: 100%;
-            height: 40px;
-            padding: 0 50px;
-        }
-
-        .header.fixed {
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        .footer.fixed {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-        }
-
-        .header a {
-            display: block;
-            width: 28px;
-            height: 18px;
-            padding: 11px;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .header a:before,
-        .header a:after {
-            content: '';
-            display: block;
-            background: #fff;
-            height: 2px;
-        }
-
-        .header a span {
-            background: #fff;
-            display: block;
-            height: 2px;
-            margin: 6px 0;
-        }
-
-        .content {
-            padding: 150px 50px 50px 50px;
-        }
-    </style>
 </head>
 
 <body>
@@ -87,195 +21,195 @@
     <div id="wrapper">
         <!-- header -->
         <header class="main-header">
-                <!-- header-top -->
-                <div class="header-top">
-                    <div class="container d-flex align-items-center">
-                        <!-- header-contact -->
-                        <div class="header-contact">
-                            <ul class="nav nav-header-contact">
-                                <li>
-                                    <a href="#"><img src="images/icon/phone.png" alt=""> 18002044 (Miễn cước cuộc gọi)</a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/icon/mail.png" alt=""> hello@cungvui.vn</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- header-language -->
-                        <div class="header-language">
-                            <ul class="nav nav-language">
-                                <li>
-                                    <a href="#" class="active">Vietnamese</a>
-                                </li>
-                                <li>
-                                    <a href="#">English</a>
-                                </li>
-                            </ul>
-                        </div>
+            <!-- header-top -->
+            <div class="header-top">
+                <div class="container d-flex align-items-center">
+                    <!-- header-contact -->
+                    <div class="header-contact">
+                        <ul class="nav nav-header-contact">
+                            <li>
+                                <a href="#"><img src="images/icon/phone.png" alt=""> 18002044 (Miễn cước cuộc gọi)</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/icon/mail.png" alt=""> hello@cungvui.vn</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <!-- nav menu header -->
-                <div class="menu-header">
-                    <div class="container">
-                        <ul class="nav nav-menu-header">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link logo">
-                                    <img src="images/logo/logo.png" alt="">
-                                </a>
+                    <!-- header-language -->
+                    <div class="header-language">
+                        <ul class="nav nav-language">
+                            <li>
+                                <a href="#" class="active">Vietnamese</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link active">trang chủ</a>
-                            </li>
-                            <!-- has-child-menu -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">giới thiệu</a>
-                                <ul class="nav nav-menu-header-child">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Về Cungvui.vn</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Thông tin hoạt động</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- has-child-menu -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">tour du lịch</a>
-                                <ul class="nav nav-menu-header-child">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link active">Du lịch Hàn Quốc</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Du lịch Nhật Bản</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Du lịch Singapore</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Du lịch Trung Quốc</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Du lịch Châu Âu</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- has-child-menu -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">visa</a>
-                                <ul class="nav nav-menu-header-child">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Thủ tục xin visa</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Kiểm tra tỉ lệ đạt visa</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- has-child-menu -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">thư viện</a>
-                                <ul class="nav nav-menu-header-child">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Hình ảnh</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Video</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- has-child-menu -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">blog du lịch</a>
-                                <ul class="nav nav-menu-header-child">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Khám phá Hàn Quốc</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Khám phá Nhật Bản</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Khám phá Trung Quốc</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Khám phá Đông Nam Á</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Khám phá Châu Âu</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Văn hóa ẩm thực</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Vòng quanh thế giới</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">liên hệ</a>
+                            <li>
+                                <a href="#">English</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-        
-                <!-- menu-mobile -->
-                <nav class="menu_mobile_top">
-                    <ul class="nav nav_menu_mobile_top">
-                        <li class="nav-item logo_menu_mobile">
-                            <a href="#" class="nav-link">
+            </div>
+            <!-- nav menu header -->
+            <div class="menu-header">
+                <div class="container">
+                    <ul class="nav nav-menu-header m-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link logo">
                                 <img src="images/logo/logo.png" alt="">
                             </a>
                         </li>
-                        <li class="nav-item bar">
-                            <a href="#menu">
-                                <div class="btn_bar">
-                                    <span class="icon_bar"></span>
-                                </div>
-                            </a>
-        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">trang chủ</a>
+                        </li>
+                        <!-- has-child-menu -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">giới thiệu</a>
+                            <ul class="nav nav-menu-header-child">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Về Cungvui.vn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Thông tin hoạt động</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- has-child-menu -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">tour du lịch</a>
+                            <ul class="nav nav-menu-header-child">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">Du lịch Hàn Quốc</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Du lịch Nhật Bản</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Du lịch Singapore</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Du lịch Trung Quốc</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Du lịch Châu Âu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- has-child-menu -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">visa</a>
+                            <ul class="nav nav-menu-header-child">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Thủ tục xin visa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Kiểm tra tỉ lệ đạt visa</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- has-child-menu -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">thư viện</a>
+                            <ul class="nav nav-menu-header-child">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Hình ảnh</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- has-child-menu -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">blog du lịch</a>
+                            <ul class="nav nav-menu-header-child">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Khám phá Hàn Quốc</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Khám phá Nhật Bản</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Khám phá Trung Quốc</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Khám phá Đông Nam Á</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Khám phá Châu Âu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Văn hóa ẩm thực</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Vòng quanh thế giới</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">liên hệ</a>
                         </li>
                     </ul>
-                </nav>
-        
-            </header>
-            <!-- menu-mobile-nav -->
-            <nav id="menu">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><span>Giới thiệu</span>
-                        <ul>
-                            <li><a href="#">Giới thiệu về Cungvui</a></li>
-                            <li><a href="#">Thông tin hoạt động</a></li>
-                        </ul>
+                </div>
+            </div>
+
+            <!-- menu-mobile -->
+            <nav class="menu_mobile_top">
+                <ul class="nav nav_menu_mobile_top">
+                    <li class="nav-item logo_menu_mobile">
+                        <a href="#" class="nav-link">
+                            <img src="images/logo/logo.png" alt="">
+                        </a>
                     </li>
-                    <li><span>Tour du lịch</span>
-                        <ul>
-                            <li><a href="#">Tour Hàn Quốc</a></li>
-                            <li><a href="#">Tour Nhật Bản</a></li>
-                            <li><a href="#">Tour Singapore</a></li>
-                            <li><a href="#">Tour Trung Quốc</a></li>
-                            <li><a href="#">Tour Châu Âu</a></li>
-                        </ul>
+                    <li class="nav-item bar">
+                        <a href="#menu">
+                            <div class="btn_bar">
+                                <span class="icon_bar"></span>
+                            </div>
+                        </a>
+
                     </li>
-        
-                    <li><span>Visa</span>
-                        <ul>
-                            <li><a href="#">Thủ tục xin visa</a></li>
-                            <li><a href="#">Kiểm tra tỉ lệ đậu visa</a></li>
-                        </ul>
-                    </li>
-                    <li><span>Blog du lịch</span>
-                        <ul>
-                            <li><a href="#">Khám phá Hàn Quốc</a></li>
-                            <li><a href="#">Khám phá Nhật Bản</a></li>
-                            <li><a href="#">Khám phá Trung Quốc</a></li>
-                            <li><a href="#">Khám phá Đông Nam Á</a></li>
-                            <li><a href="#">Khám phá Châu Âu</a</li> <li><a href="#">Văn hóa ẩm thực</a></li>
-                            <li><a href="#">Vòng quanh thế giới</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Liên hệ</a></li>
                 </ul>
             </nav>
+
+        </header>
+        <!-- menu-mobile-nav -->
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><span>Giới thiệu</span>
+                    <ul>
+                        <li><a href="#">Giới thiệu về Cungvui</a></li>
+                        <li><a href="#">Thông tin hoạt động</a></li>
+                    </ul>
+                </li>
+                <li><span>Tour du lịch</span>
+                    <ul>
+                        <li><a href="#">Tour Hàn Quốc</a></li>
+                        <li><a href="#">Tour Nhật Bản</a></li>
+                        <li><a href="#">Tour Singapore</a></li>
+                        <li><a href="#">Tour Trung Quốc</a></li>
+                        <li><a href="#">Tour Châu Âu</a></li>
+                    </ul>
+                </li>
+
+                <li><span>Visa</span>
+                    <ul>
+                        <li><a href="#">Thủ tục xin visa</a></li>
+                        <li><a href="#">Kiểm tra tỉ lệ đậu visa</a></li>
+                    </ul>
+                </li>
+                <li><span>Blog du lịch</span>
+                    <ul>
+                        <li><a href="#">Khám phá Hàn Quốc</a></li>
+                        <li><a href="#">Khám phá Nhật Bản</a></li>
+                        <li><a href="#">Khám phá Trung Quốc</a></li>
+                        <li><a href="#">Khám phá Đông Nam Á</a></li>
+                        <li><a href="#">Khám phá Châu Âu</a</li> <li><a href="#">Văn hóa ẩm thực</a></li>
+                        <li><a href="#">Vòng quanh thế giới</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
 
         <!-- section slideshow -->
         <section class="slideshow">
@@ -329,11 +263,11 @@
         <div class="clearfix"></div>
         <!-- section main 1 -->
         <section class="main-1">
-            <div class="container">
+            <div class="container mobile">
                 <!-- section tour hot -->
                 <section class="tour-hot">
-                    <div class="container">
-                        <div class="tour-hot-wrap">
+                    <div class="container mobile">
+                        <div class="tour-hot-wrap" data-aos="fade-up" data-aos-duration="1500">
                             <div class="button-tour-control">
                                 <div class="swiper-button-prev-tour"><i class="fas fa-caret-left"></i></div>
                                 <div class="swiper-button-next-tour"><i class="fas fa-caret-right"></i></div>
@@ -710,7 +644,7 @@
                 <!-- section about us -->
                 <section class="about-us">
                     <div class="row">
-                        <div class="col-md-6 about-us-images">
+                        <div class="col-md-6 about-us-images" data-aos="fade-right" data-aos-duration="1500">
                             <div class="abouts-img1">
                                 <img src="images/abouts/layoutHome2_11.jpg" alt="">
                             </div>
@@ -718,7 +652,7 @@
                                 <img src="images/abouts/img_4.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 about-us-description">
+                        <div class="col-md-6 about-us-description" data-aos="fade-left" data-aos-duration="1500">
                             <div class="title-welcome">
                                 <h1>welcome us</h1>
                             </div>
@@ -742,6 +676,220 @@
             </div>
         </section>
 
+        <!-- main-top-mobile -->
+        <section class="main-top-mobile">
+            <section class="tour-hot-mobile" data-aos="fade-up" data-aos-duration="1500">
+                <div class="button-tour-control">
+                    <div class="swiper-button-prev-tour"><i class="fas fa-caret-left"></i></div>
+                    <div class="swiper-button-next-tour"><i class="fas fa-caret-right"></i></div>
+                </div>
+                <div class="swiper-container slide-tour-hot">
+                    <div class="swiper-wrapper">
+                        <!-- slide_1 -->
+                        <div class="swiper-slide">
+                            <div class="tour-hot-item-mobile">
+                                <div class="tour-him-img">
+                                    <img src="images/travel/img_2.jpg" alt="">
+                                </div>
+                                <div class="tour-him-content">
+                                    <div class="text-content">
+                                        <div class="title">
+                                            <h3>tour hot</h3>
+                                        </div>
+                                        <div class="headline">
+                                            <h3>
+                                                <a href="#">Khám phá Hàn Quốc với Jeju - Seoul - Nami -
+                                                    Everland
+                                                    với 6 ngày 5 đêm</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <ul class="nav nav-price">
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide_1 -->
+                        <div class="swiper-slide">
+                            <div class="tour-hot-item-mobile">
+                                <div class="tour-him-img">
+                                    <img src="images/travel/img_2.jpg" alt="">
+                                </div>
+                                <div class="tour-him-content">
+                                    <div class="text-content">
+                                        <div class="title">
+                                            <h3>tour hot</h3>
+                                        </div>
+                                        <div class="headline">
+                                            <h3>
+                                                <a href="#">Khám phá Hàn Quốc với Jeju - Seoul - Nami -
+                                                    Everland
+                                                    với 6 ngày 5 đêm</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <ul class="nav nav-price">
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide_1 -->
+                        <div class="swiper-slide">
+                            <div class="tour-hot-item-mobile">
+                                <div class="tour-him-img">
+                                    <img src="images/travel/img_2.jpg" alt="">
+                                </div>
+                                <div class="tour-him-content">
+                                    <div class="text-content">
+                                        <div class="title">
+                                            <h3>tour hot</h3>
+                                        </div>
+                                        <div class="headline">
+                                            <h3>
+                                                <a href="#">Khám phá Hàn Quốc với Jeju - Seoul - Nami -
+                                                    Everland
+                                                    với 6 ngày 5 đêm</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <ul class="nav nav-price">
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide_1 -->
+                        <div class="swiper-slide">
+                            <div class="tour-hot-item-mobile">
+                                <div class="tour-him-img">
+                                    <img src="images/travel/img_2.jpg" alt="">
+                                </div>
+                                <div class="tour-him-content">
+                                    <div class="text-content">
+                                        <div class="title">
+                                            <h3>tour hot</h3>
+                                        </div>
+                                        <div class="headline">
+                                            <h3>
+                                                <a href="#">Khám phá Hàn Quốc với Jeju - Seoul - Nami -
+                                                    Everland
+                                                    với 6 ngày 5 đêm</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <ul class="nav nav-price">
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide_1 -->
+                        <div class="swiper-slide">
+                            <div class="tour-hot-item-mobile">
+                                <div class="tour-him-img">
+                                    <img src="images/travel/img_2.jpg" alt="">
+                                </div>
+                                <div class="tour-him-content">
+                                    <div class="text-content">
+                                        <div class="title">
+                                            <h3>tour hot</h3>
+                                        </div>
+                                        <div class="headline">
+                                            <h3>
+                                                <a href="#">Khám phá Hàn Quốc với Jeju - Seoul - Nami -
+                                                    Everland
+                                                    với 6 ngày 5 đêm</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <ul class="nav nav-price">
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                            <li>
+                                                <a>18.690.000 <span>đ</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-us-mobile">
+                <div class="abm-img" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="abn-img-1">
+                        <img src="images/abouts/layoutHome2_11.jpg" alt="">
+                    </div>
+                    <div class="abm-img-2">
+                        <img src="images/abouts/img_4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="abm-content"  data-aos="fade-left" data-aos-duration="1500">
+                    <div class="title">
+                        <h1>welcome us</h1>
+                    </div>
+                    <div class="summary">
+                        <p>Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque commodo,
+                            nisl nec
+                            tincidunt elementum, tellus metus consequat justo, eget aliquet erat eros eget arcu. Nunc
+                            tincidunt
+                            est mi, at vulputate lorem fringilla id. In id felis ullamcorper nulla cursus sollicitudin.
+                            Donec
+                            egestas est eget luctus malesuada</p>
+                        <p>Nullam lacinia lacus massa, nec posuere urna ultrices non. Aliquam id maximus nulla. Nulla
+                            placerat
+                            cursus pretium. Fusce sit amet erat in mi scelerisque vestibulum ac cursus augue. Mauris ut
+                            dictum
+                            lorem</p>
+                        <p>Nullam lacinia lacus massa, nec posuere urna ultrices non. Aliquam id maximus nulla. Nulla
+                            placerat
+                            cursus pretium. Fusce sit amet erat in mi scelerisque vestibulum ac cursus augue. Mauris ut
+                            dictum
+                            lorem</p>
+                    </div>
+                    <div class="see-more">
+                        <a href="#">xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </section>
         <!-- section main 2 -->
         <section class="main-2">
             <div class="container">
@@ -750,29 +898,34 @@
                 <section class="tour-travel">
                     <div class="row list-item-tour-travel">
                         <!-- tour-desc -->
-                        <div class="col-md-3 col-12 tour-desc">
-                            <div class="tour-sites">
-                                <h2>tour hàn quốc</h2>
-                            </div>
-                            <div class="tour-summary">
-                                <p>Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque
-                                    commodo, nisl nec tincidunt elementum, tellus metus consequat justo, eget aliquet
-                                    erat eros eget arc. Nunc tincidunt est mi, at vulputate lorem fringilla id</p>
-                            </div>
-                            <div class="button-controls">
-                                <div class="see-details">
-                                    <a href="#">xem thêm <i class="fas fa-arrow-right"></i></a>
+                        <div class="col-md-3 col-12">
+                            <div class="tour-desc">
+                                <div class="tour-sites">
+                                    <h2>tour hàn quốc</h2>
                                 </div>
-                                <div class="button-tour-travel-control">
-                                    <div class="swiper-button-next-tour-travel prev-controls-tour1"><i
-                                            class="fas fa-caret-left"></i></div>
-                                    <div class="swiper-button-prev-tour-travel next-controls-tour1"><i
-                                            class="fas fa-caret-right"></i></div>
+                                <div class="tour-summary">
+                                    <p>Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque
+                                        commodo, nisl nec tincidunt elementum, tellus metus consequat justo, eget
+                                        aliquet
+                                        erat eros eget arc. Nunc tincidunt est mi, at vulputate lorem fringilla id</p>
+                                </div>
+                                <div class="button-controls">
+                                    <div class="see-details">
+                                        <a href="#">xem thêm <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                    <div class="button-tour-travel-control">
+                                        <div class="swiper-button-next-tour-travel prev-controls-tour1"><i
+                                                class="fas fa-caret-left"></i></div>
+                                        <div class="swiper-button-prev-tour-travel next-controls-tour1"><i
+                                                class="fas fa-caret-right"></i></div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                         <!-- tour-slide -->
-                        <div class="col-md-9 col-12 tour-list-slide">
+                        <div class="col-md-9 col-12 tour-list-slide" data-aos="fade-up"
+                        data-aos-duration="1500">
                             <div class="swiper-container tour-slide tour-slide1">
                                 <div class="swiper-wrapper">
                                     <!-- tour-slide1 -->
@@ -911,12 +1064,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row list-item-blogs-travel">
+                    <div class="row list-item-blogs-travel" data-aos="fade-up"
+                    data-aos-duration="1500">
                         <!-- tour-blogs -->
-                        <div class="col-md-12 col-12 tour-blogs">
+                        <div class="col-md-12 col-12 tour-blogs p-0">
                             <div class="row">
-                                <div class="col-md-8 col-12 tour-blogs-item-first pr-0"
-                                    style="padding-right: 8px!important">
+                                <div class="col-md-8 col-12 tour-blogs-item-first pr-0">
                                     <div class="tour-blogs-item-first-img">
                                         <img src="images/travel/layoutHome2_37.jpg" alt="">
                                     </div>
@@ -933,8 +1086,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12 tour-blogs-list-item pl-0"
-                                    style="padding-left:8px!important">
+                                <div class="col-md-4 col-12 tour-blogs-list-item">
                                     <div class="tour-blogs-item">
                                         <div class="tour-blogs-item-img">
                                             <img src="images/travel/layoutHome2_34.jpg" alt="">
@@ -1022,7 +1174,8 @@
                             </div>
                         </div>
                         <!-- tour-slide -->
-                        <div class="col-md-9 col-12 tour-list-slide">
+                        <div class="col-md-9 col-12 tour-list-slide" data-aos="fade-up"
+                        data-aos-duration="1500">
                             <div class="swiper-container tour-slide tour-slide2">
                                 <div class="swiper-wrapper">
                                     <!-- tour-slide1 -->
@@ -1161,12 +1314,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row list-item-blogs-travel">
+                    <div class="row list-item-blogs-travel" data-aos="fade-up"
+                    data-aos-duration="1500">
                         <!-- tour-blogs -->
-                        <div class="col-md-12 col-12 tour-blogs">
+                        <div class="col-md-12 col-12 tour-blogs p-0">
                             <div class="row">
-                                <div class="col-md-8 col-12 tour-blogs-item-first pr-0"
-                                    style="padding-right: 8px!important">
+                                <div class="col-md-8 col-12 tour-blogs-item-first pr-0">
                                     <div class="tour-blogs-item-first-img">
                                         <img src="images/travel/layoutHome2_58.jpg" alt="">
                                     </div>
@@ -1183,8 +1336,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12 tour-blogs-list-item pl-0"
-                                    style="padding-left: 8px!important">
+                                <div class="col-md-4 col-12 tour-blogs-list-item pl-0">
                                     <div class="tour-blogs-item">
                                         <div class="tour-blogs-item-img">
                                             <img src="images/travel/layoutHome2_65.jpg" alt="">
@@ -1272,7 +1424,8 @@
                             </div>
                         </div>
                         <!-- tour-slide -->
-                        <div class="col-md-9 col-12 tour-list-slide">
+                        <div class="col-md-9 col-12 tour-list-slide" data-aos="fade-up"
+                        data-aos-duration="1500">
                             <div class="swiper-container tour-slide tour-slide3">
                                 <div class="swiper-wrapper">
                                     <!-- tour-slide1 -->
@@ -1411,12 +1564,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row list-item-blogs-travel">
+                    <div class="row list-item-blogs-travel" data-aos="fade-up"
+                    data-aos-duration="1500">
                         <!-- tour-blogs -->
-                        <div class="col-md-12 col-12 tour-blogs">
+                        <div class="col-md-12 col-12 tour-blogs p-0">
                             <div class="row">
-                                <div class="col-md-8 col-12 tour-blogs-item-first pr-0"
-                                    style="padding-right: 8px!important">
+                                <div class="col-md-8 col-12 tour-blogs-item-first pr-0">
                                     <div class="tour-blogs-item-first-img">
                                         <img src="images/travel/layoutHome2_87.jpg" alt="">
                                     </div>
@@ -1433,8 +1586,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12 tour-blogs-list-item pl-0"
-                                    style="padding-left:8px!important">
+                                <div class="col-md-4 col-12 tour-blogs-list-item pl-0">
                                     <div class="tour-blogs-item">
                                         <div class="tour-blogs-item-img">
                                             <img src="images/travel/layoutHome2_84.jpg" alt="">
@@ -1504,10 +1656,11 @@
                         <div class="col-md-12 col-12 blogs-desc">
                             <div class="row">
                                 <div class="col-md-8 col-12">
-                                    <div class="blogs-title">
+                                    <div class="blogs-title" data-aos="fade-right">
                                         <h2>blog du lịch</h2>
                                     </div>
-                                    <div class="blogs-summary">
+                                    <div class="blogs-summary" data-aos="fade-right" data-aos-easing="linear"
+                                    data-aos-duration="1500">
                                         <p>Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit.
                                             Quisque
                                             commodo, nisl nec tincidunt elementum, tellus metus consequat justo, eget
@@ -1520,7 +1673,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-12">
-                                    <div class="blogs-travel-control">
+                                    <div class="blogs-travel-control" >
                                         <div class="see-details">
                                             <a href="#">xem thêm <i class="fas fa-arrow-right"></i></a>
                                         </div>
@@ -1534,7 +1687,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 col-12 blogs-slide">
+                        <div class="col-md-12 col-12 blogs-slide" data-aos="fade-up"
+                        data-aos-duration="1500">
                             <div class="swiper-container list-blogs-slide">
                                 <div class="swiper-wrapper">
                                     <!-- blogs-slide1 -->
@@ -1827,16 +1981,18 @@
                 <div class="line"></div>
                 <!-- section cumtomer-feedback -->
                 <section class="cusomer-feedback">
-                    <div class="title">
+                    <div class="title" data-aos="fade-right" data-aos-duration="1000">
                         <h3>đăng ký newsletters</h3>
                     </div>
-                    <div class="input-mail">
-                        <div class="input-item input">
-                            <input type="mail" name="mail" id="mail" placeholder="Email của bạn">
-                        </div>
-                        <div class="input-item button">
-                            <a href="#" class="btn-sumit">đăng ký</a>
-                        </div>
+                    <div >
+                        <form action="" class="input-mail" data-aos="fade-right" data-aos-duration="1500">
+                                <div class="input-item input">
+                                        <input type="mail" name="mail" id="mail" placeholder="Email của bạn">
+                                    </div>
+                                    <div class="input-item button">
+                                        <button class="btn-submit" type="submit">đăng ký</button>
+                                    </div>
+                        </form>
                     </div>
                     <div class="menu-social-footer">
                         <ul class="nav nav-social-footer">
@@ -1988,9 +2144,23 @@
                     <span>Messenger</span>
                 </a>
             </div>
-            <ul class="nav nav_social_networks">
         </div>
     </div>
+    <!-- loadding -->
+    <div class="multi-spinner-container">
+            <div class="multi-spinner">
+                <div class="multi-spinner">
+                    <div class="multi-spinner">
+                       <div class="multi-spinner">
+                            <div class="multi-spinner">
+                                <div class="multi-spinner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
     <!-- import file js -->
     <script src="js/jquery.min.js"></script>
@@ -1999,31 +2169,21 @@
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.mmenu.all.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smooth-scrollbar.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
     <!-- end import file js -->
 
-    <!-- script carousel -->
     <script>
-
-    </script>
-    <!-- end script carousel -->
+    Scrollbar.initAll({});
+          </script>
 
     <!-- script plugins fb -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2"></script>
     <!-- end script plugins fb -->
-
-    <script>
-        $(document).ready(function(){
-            $(function () {
-            $('nav#menu').mmenu({
-                extensions: ["position-right"]
-            });
-        });    
-        });
-    </script>
 </body>
 
 </html>

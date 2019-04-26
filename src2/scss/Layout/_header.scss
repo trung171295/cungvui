@@ -43,4 +43,10 @@
 .menu_mobile_top,.menu_mobile{
     display: none;
 }
+.menu-header.is-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 @import 'Components/_nav-top.scss';

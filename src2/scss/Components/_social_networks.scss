@@ -1,14 +1,26 @@
 .social_networks{
     display: block;
+    visibility: hidden;
     position: fixed;
-    right: 0;
-    top: 30vh;
+    right: -5%;
+    top: 25%;
     z-index: 9998;
+    transition: all 0.5s ease-in-out;
     @media screen and (max-width:768px){
         display: none;
     }
     .social_item{
         margin-bottom: 5px;
+        &:hover{
+            a{
+                svg{
+                    transform-style: preserve-3d;
+                    perspective: 15px;
+                    transform: rotateX(360deg);
+                    transition: all 0.4s linear;
+                }
+            }
+        }
         &:hover a{
             i{
                 transform: scale(1.2);
@@ -40,14 +52,14 @@
                 text-align: center;
                 min-width: 160px;
                 visibility: hidden;
-                transition-duration: 0.4s;
+                transition-duration: 0.5s;
                 z-index: 1;
                 opacity: 0;
             }
         }
     }
     .social_item:nth-child(1):hover{
-        transition:  all 0.4s ease-in;
+        transition:  all 0.5s ease-in;
         a{
             background-color: $color-fb;
             i{
@@ -112,8 +124,8 @@
     }
     .social_item:nth-child(2){
         a{
-            i{
-                color: $color-phone;
+            svg{
+                transform: rotateY(160deg);
             }
             span{
                 background-color: $color-phone;

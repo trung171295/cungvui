@@ -67,6 +67,28 @@ $(document).ready(function() {
 			hiddenClass: 'swiper-button-hidden',
 			lockClass: 'swiper-button-lock',
 		},
+		breakpoints: {
+			1024: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			768: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			640: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			320: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			}
+		  }
 	});
 	//tour-travel-2
 	var swiper = new Swiper('.tour-slide2', {
@@ -79,6 +101,28 @@ $(document).ready(function() {
 			hiddenClass: 'swiper-button-hidden',
 			lockClass: 'swiper-button-lock',
 		},
+		breakpoints: {
+			1024: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			768: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			640: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			320: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			}
+		  }
 	});
 	//tour-travel-3
 	var swiper = new Swiper('.tour-slide3', {
@@ -91,6 +135,28 @@ $(document).ready(function() {
 			hiddenClass: 'swiper-button-hidden',
 			lockClass: 'swiper-button-lock',
 		},
+		breakpoints: {
+			1024: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			768: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			640: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			},
+			320: {
+			  slidesPerView: 1,
+			  spaceBetween: 20,
+			  slidesPerColumn:3,
+			}
+		  }
 	});
 	//blogs-travel
 	var swiper = new Swiper('.list-blogs-slide', {
@@ -102,6 +168,24 @@ $(document).ready(function() {
 			disabledClass: 'swiper-button-disabled',
 			hiddenClass: 'swiper-button-hidden',
 			lockClass: 'swiper-button-lock',
+		},
+			breakpoints: {
+				1024: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				}
 		},
 	});
 });
