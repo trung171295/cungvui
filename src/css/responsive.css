@@ -305,9 +305,6 @@ body {
   position: relative;
   scroll-behavior: smooth; }
 
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
-
 @font-face {
   font-family: 'UTM Avo';
   src: url("../fonts/UTMAvo/UTMAvo.eot");
@@ -567,7 +564,52 @@ nav:not(.mm-menu) {
 .main-top-mobile {
   display: none; }
 
+.multi-spinner-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999999999; }
+
+.multi-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  height: 35px;
+  border: 5px solid transparent;
+  border-top-color: #ff5722;
+  border-radius: 50%;
+  -webkit-animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;
+  animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 @media only screen and (max-width: 768px) {
+  .co-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-12 {
+    padding: 0;
+    margin: 0; }
   .main-header {
     width: 100%;
     min-height: 52px;
@@ -813,7 +855,7 @@ nav:not(.mm-menu) {
     .main-2 .tour-travel .list-item-blogs-travel .tour-list-slide {
       padding: 0 !important; }
     .main-2 .tour-travel .list-item-blogs-travel .tour-blogs-item-first {
-      min-height: 570px;
+      min-height: 630px;
       width: 100%;
       overflow: hidden; }
       .main-2 .tour-travel .list-item-blogs-travel .tour-blogs-item-first .tour-blogs-item-first-img {
