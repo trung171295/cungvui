@@ -1,0 +1,201 @@
+@import 'Helpers/_fonts.scss';
+@import 'Helpers/_variables.scss';
+@import 'Helpers/_mixin.scss';
+// network-socail footer
+.nav-social-footer{
+    li:nth-child(1){
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: '\f39e';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-fb;
+            border-color: $color-fb;
+            color: #ffffff;
+            border-radius: 50%;
+            transform-origin: right;
+            transition: transform 0.3s linear;
+            transform: rotateY(90deg) translateY(50%);
+            font-family: 'Font Awesome 5 Brands';
+            font-size: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            line-height: 45px;
+        }
+        a{
+            transition: 0.2s;
+        }
+    }
+    li:nth-child(1):hover::before{
+        transform: rotateY(0deg) translateY(0);
+    }
+    li:nth-child(2){
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: '\f16d';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:$color-tw;
+            border-color: $color-tw;
+            color: #ffffff;
+            border-radius: 50%;
+            transform-origin: right;
+            transition: transform 0.3s linear;
+            transform: rotateY(90deg) translateY(50%);
+            font-family: 'Font Awesome 5 Brands';
+            font-size: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            line-height: 45px;
+        }
+        a{
+            transition: 0.2s;
+        }
+    }
+    li:nth-child(2):hover::before{
+        transform: rotateY(0deg) translateY(0);
+    }
+    li:nth-child(3){
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: '\f167';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:$color-ytb;
+            border-color: $color-ytb;
+            color: #ffffff;
+            border-radius: 50%;
+            transform-origin: right;
+            transition: transform 0.3s linear;
+            transform: rotateY(90deg) translateY(50%);
+            font-family: 'Font Awesome 5 Brands';
+            font-size: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            line-height: 45px;
+        }
+        a{
+            transition: 0.2s;
+        }
+    }
+    li:nth-child(3):hover::before{
+        transform: rotateY(0deg) translateY(0);
+    }
+}
+
+//hover img tour travel
+.tour-item-img,.blogs-item-img,.tour-blogs-item-img,.blogs_item_img,.tour_item_img{
+    overflow: hidden;
+    img{
+        filter: grayscale(0);
+        transition: transform 0.6s ease-in;
+    }
+    &:hover{
+        img{
+            transform: scale(1.2) rotate(-5deg);
+            filter: grayscale(100%);
+        }
+    }
+}
+
+.tour-blogs-item-first-img,.tour-hot-item-img,.blogs_item_first_img,.banner_tour_footer_img,.bl_item_img,.tour-item-img,.bl_item_img,.item_img{
+    position: relative;
+    overflow: hidden;
+    img{
+        transition: 0.5s ease-out;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 170%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255,255,0.2);
+        z-index: 1;
+        transform: skewX(45deg);
+        transition: 0.8s;
+    }
+}
+.tour-blogs-item-first-img:hover,.tour-hot-item-img:hover,.blogs_item_first_img:hover,.banner_tour_footer_img:hover{
+    img{
+        transform: scale(1.2);
+        transition: transform 0.5s;
+    }
+    &::before{
+        left: -170%;
+    }
+}
+
+//hover button
+.input-item.button{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-ogr;
+        z-index: -1;
+    }
+}
+    .input-item.button:hover{
+        &::before{
+            filter: blur(10px);
+        }
+    }
+    .button-see-details,.blogs-item-title,.btnsubmit{
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-ogr;
+            z-index: -1;
+        }
+    }
+    .button-see-details:hover,.blogs-item-title:hover,.submit:hover{
+        &::before{
+            filter: blur(10px);
+        }
+    }
+    .button_book_tour{
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fa0707;
+            z-index: -1;
+        }
+    }
+    .button_book_tour:hover{
+        &::before{
+            filter: blur(10px);
+        }
+    }
+
+    ///////////icon
+    .icon-more{
+        &:hover{
+            filter: blur(5px);
+        }
+    }
