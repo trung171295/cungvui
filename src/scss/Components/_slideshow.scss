@@ -69,6 +69,19 @@
         height: calc(15% - 12px);
         background-color: $color-white-lite;
         z-index: 9999;
-        transition: all 0.5s ease-in;
+        transition: all 0.3s ease-in;
     }
+}
+.nav-slide-social.hidden{
+    right: 0%;
+    opacity: 0;
+    transform: translate(30vh,30vh);
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+}
+.line-vertical.hidden{
+    right: -5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-out;
 }

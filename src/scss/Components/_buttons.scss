@@ -38,6 +38,22 @@
         outline: none;
     }
 }
+.swiper-button-next-tour-mobile,
+.swiper-button-prev-tour-mobile{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $color-white-lite;
+    background-color: $color-ogr;
+    cursor: pointer;
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
 .swiper-button-disabled{
     background-color: #ffffff;
     color: #bebaba;

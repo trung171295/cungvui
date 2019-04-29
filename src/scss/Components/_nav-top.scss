@@ -14,6 +14,7 @@
 	text-align: right;
 	z-index: 9999;
 	background-color: #ffffff;
+	transition: all 0.2s ease-in;
 }
 .nav-menu-header > li {
 	padding: 0;
@@ -167,4 +168,13 @@
 	width: 100%;
 	padding: 0;
 	margin: 0;
+}
+.nav-menu-header.animate{
+	position: absolute;
+	height: 70px;
+	box-shadow: 0 3px 9px rgba($color: #000000, $alpha: 0.6);
+	transition: all 0.5s ease-in;
+	li:nth-child(1){
+		margin-right: auto;
+	}
 }

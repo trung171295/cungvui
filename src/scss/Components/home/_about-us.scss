@@ -10,6 +10,7 @@
         width: 90%;
     }
     .abouts-img1 > img{
+        width: 100%;
         border: 6px solid #fefdfd;
         object-fit: contain;
         box-shadow: 0 0px 7px rgba(0,0,0,0.6), 0 0px 7px rgba(0,0,0,0.3);
@@ -21,6 +22,7 @@
         left: 48%;
     }
     .abouts-img2 > img{
+        width: 100%;
         border: 6px solid #fefdfd;
         object-fit: contain;
         box-shadow: 0 0px 7px rgba(0,0,0,0.6), 0 0px 7px rgba(0,0,0,0.3);
@@ -36,6 +38,6 @@
         @include text-title-abouts;
     }
     .summary,.see-details{
-        padding:0 30px;
+        padding:0 20px;
     }
 }

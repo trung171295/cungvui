@@ -44,6 +44,13 @@
             }
         }
     }
+    li.breadcrumb-item:nth-child(1){
+        a{
+            svg{
+                margin-top: -5px;
+            }
+        }
+    }
     li.breadcrumb-item.active{
         color: #818181;
         font: 12px 'UTM Avo';

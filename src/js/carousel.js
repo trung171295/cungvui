@@ -48,6 +48,10 @@ $(document).ready(function() {
 					slidesPerView: 1,
 					spaceBetween: 30,
 				},
+				996:{
+					slidesPerView: 1,
+					spaceBetween: 30,
+				},
 				1024:{
 					slidesPerView: 1,
 					spaceBetween: 30,
@@ -56,6 +60,41 @@ $(document).ready(function() {
 		},
 	});
 
+	//tour-hot-mobile
+	var swiper = new Swiper('.slide-tour-hot-mobile', {
+		navigation: {
+			nextEl: '.swiper-button-next-tour-mobile',
+			prevEl: '.swiper-button-prev-tour-mobile',
+			disabledClass: 'swiper-button-disabled',
+			hiddenClass: 'swiper-button-hidden',
+			lockClass: 'swiper-button-lock',
+			breakpoints: {
+				// when window width is <= 320px
+				320: {
+				  slidesPerView: 1,
+				  spaceBetween: 10,
+				},
+				// when window width is <= 480px
+				480: {
+				  slidesPerView: 1,
+				  spaceBetween: 20,
+				},
+				// when window width is <= 640px
+				640: {
+				  slidesPerView: 1,
+				  spaceBetween: 20,
+				},
+				768:{
+					slidesPerView: 1,
+					spaceBetween: 30,
+				},
+				1024:{
+					slidesPerView: 1,
+					spaceBetween: 30,
+				},
+			}
+		},
+	});
 	//tour-travel-1
 	var swiper = new Swiper('.tour-slide1', {
 		slidesPerView: 3,
@@ -73,10 +112,13 @@ $(document).ready(function() {
 			  spaceBetween: 20,
 			  slidesPerColumn:3,
 			},
+			996:{
+			  slidesPerView: 3,
+			  spaceBetween: 15,
+			},
 			768: {
-			  slidesPerView: 1,
-			  spaceBetween: 20,
-			  slidesPerColumn:3,
+			  slidesPerView: 3,
+			  spaceBetween: 15,
 			},
 			640: {
 			  slidesPerView: 1,
@@ -107,10 +149,13 @@ $(document).ready(function() {
 			  spaceBetween: 20,
 			  slidesPerColumn:3,
 			},
+			996:{
+			  slidesPerView: 3,
+			  spaceBetween: 15,
+			},
 			768: {
-			  slidesPerView: 1,
-			  spaceBetween: 20,
-			  slidesPerColumn:3,
+			  slidesPerView: 3,
+			  spaceBetween: 15,
 			},
 			640: {
 			  slidesPerView: 1,
@@ -141,10 +186,13 @@ $(document).ready(function() {
 			  spaceBetween: 20,
 			  slidesPerColumn:3,
 			},
+			996:{
+			  slidesPerView: 3,
+			  spaceBetween: 15,
+			},
 			768: {
-			  slidesPerView: 1,
-			  spaceBetween: 20,
-			  slidesPerColumn:3,
+			  slidesPerView: 3,
+			  spaceBetween: 15,
 			},
 			640: {
 			  slidesPerView: 1,

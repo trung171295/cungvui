@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animated.css">
 </head>
 
 <body>
@@ -680,10 +681,10 @@
         <section class="main-top-mobile">
             <section class="tour-hot-mobile" data-aos="fade-up" data-aos-duration="1500">
                 <div class="button-tour-control">
-                    <div class="swiper-button-prev-tour"><i class="fas fa-caret-left"></i></div>
-                    <div class="swiper-button-next-tour"><i class="fas fa-caret-right"></i></div>
+                    <div class="swiper-button-prev-tour-mobile"><i class="fas fa-caret-left"></i></div>
+                    <div class="swiper-button-next-tour-mobile"><i class="fas fa-caret-right"></i></div>
                 </div>
-                <div class="swiper-container slide-tour-hot">
+                <div class="swiper-container slide-tour-hot-mobile">
                     <div class="swiper-wrapper">
                         <!-- slide_1 -->
                         <div class="swiper-slide">
@@ -2148,19 +2149,18 @@
     </div>
     <!-- loadding -->
     <div class="multi-spinner-container">
+        <div class="multi-spinner">
             <div class="multi-spinner">
                 <div class="multi-spinner">
                     <div class="multi-spinner">
-                       <div class="multi-spinner">
-                            <div class="multi-spinner">
-                                <div class="multi-spinner"></div>
-                            </div>
+                        <div class="multi-spinner">
+                            <div class="multi-spinner"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+    </div>
 
     <!-- import file js -->
     <script src="js/jquery.min.js"></script>
@@ -2176,9 +2176,10 @@
     <!-- end import file js -->
 
     <script>
-    Scrollbar.initAll({});
-          </script>
-
+        var Scrollbar = window.Scrollbar;
+      
+        Scrollbar.init(document.querySelector('#wrapper'), options);
+      </script>
     <!-- script plugins fb -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"

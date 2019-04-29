@@ -11,7 +11,7 @@ $(document).ready(function() {
 	////////////loadding ...
 	setTimeout(function(){
 		$(".multi-spinner-container").remove();
-	},1000);
+	});
 	////////////////////menu
 	$(function () {
 		$('nav#menu').mmenu({
@@ -40,14 +40,19 @@ $(document).ready(function() {
 
 	//////////fixed menu
 	var fixed = $('.menu-header').offset().top;
+	var prevScroll = $(window).scrollTop();
 	$(window).on('scroll',function(){
 		if($(window).scrollTop() > fixed){
 			$('.menu-header').addClass('is-fixed');
-			$('.container').removeClass('contiane');
+			$('.menu-header > .container').addClass('containe');
+			$('.menu-header > .container').removeClass('container');
+			$('.nav-menu-header').addClass('animate');
 		}
 		else{
 			$('.menu-header').removeClass('is-fixed');
-			$('.containe').addClass('contianer');
+			$('.menu-header > .containe').addClass('container');
+			$('.menu-header > .containe').removeClass('containe');
+			$('.nav-menu-header').removeClass('animate');
 		}
 	});
 	/////////hiden social network
@@ -55,4 +60,5 @@ $(document).ready(function() {
 	$(window).on('scroll',function(){
 		($(window).scrollTop() > hidden + 100) ? $('.nav-slide-social,.line-vertical').addClass('hidden') && $('.social_networks').addClass('hidden')  : $('.nav-slide-social,.line-vertical').removeClass('hidden') && $('.social_networks').removeClass('hidden');
 	});
+	////////////s
 });
