@@ -110,7 +110,6 @@ $(document).ready(function() {
 			1024: {
 			  slidesPerView: 1,
 			  spaceBetween: 20,
-			  slidesPerColumn:3,
 			},
 			996:{
 			  slidesPerView: 3,
@@ -147,7 +146,6 @@ $(document).ready(function() {
 			1024: {
 			  slidesPerView: 1,
 			  spaceBetween: 20,
-			  slidesPerColumn:3,
 			},
 			996:{
 			  slidesPerView: 3,
@@ -184,7 +182,6 @@ $(document).ready(function() {
 			1024: {
 			  slidesPerView: 1,
 			  spaceBetween: 20,
-			  slidesPerColumn:3,
 			},
 			996:{
 			  slidesPerView: 3,

@@ -6,6 +6,8 @@
     height: 500px;
     z-index: 8888;
     background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
     .block_hidden{
         display: block;
         position: absolute;
